@@ -12,12 +12,12 @@ faiss-cpu==1.8.0.post1
 opencv-python-headless==4.10.0.84
 
 insightface==0.7.3
-onnxruntime==1.19.2
-deepface==0.0.93
+onnxruntime>=1.19,<1.22
+deepface==
 
-python-dotenv==1.0.1
-pydantic==2.9.2
-pydantic-settings==2.4.0
+python-dotenv
+pydantic
+pydantic-settings
 
 cloudinary
 
