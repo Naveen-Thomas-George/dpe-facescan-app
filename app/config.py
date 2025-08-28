@@ -19,11 +19,13 @@ class Settings(BaseSettings):
     MAX_UPLOAD_MB: int = 8
     SECRET_KEY: str = "change-me"
 
-    MEDIA_ROOT: str = os.path.join(os.getcwd(), "media")  # safe local dir
+    # ✅ Use /tmp/media by default
+    MEDIA_ROOT: str = os.getenv("MEDIA_ROOT", "/tmp/media")
 
 
 settings = Settings()
 
+# Create required folders
 os.makedirs(settings.MEDIA_ROOT, exist_ok=True)
 os.makedirs(os.path.join(settings.MEDIA_ROOT, "indices"), exist_ok=True)
 os.makedirs(os.path.join(settings.MEDIA_ROOT, "embeddings"), exist_ok=True)
