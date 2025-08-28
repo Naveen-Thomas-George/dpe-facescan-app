@@ -19,7 +19,8 @@ class Settings(BaseSettings):
     MAX_UPLOAD_MB: int = 8
     SECRET_KEY: str = "change-me"
 
-    MEDIA_ROOT: str = "/data/media"  # for FAISS/embeddings on Railway volume
+    MEDIA_ROOT: str = os.path.join(os.getcwd(), "media")  # safe local dir
+
 
 settings = Settings()
 
