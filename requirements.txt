@@ -13,7 +13,7 @@ opencv-python-headless==4.10.0.84
 
 insightface==0.7.3
 onnxruntime>=1.19,<1.22
-deepface==
+deepface
 
 python-dotenv
 pydantic
