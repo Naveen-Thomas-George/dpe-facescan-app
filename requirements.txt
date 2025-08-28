@@ -1,18 +1,18 @@
-fastapi==0.115.0
-uvicorn[standard]==0.30.6
-python-multipart==0.0.9
-jinja2==3.1.4
+fastapi
+uvicorn[standard]
+python-multipart
+jinja2
 
-sqlalchemy==2.0.34
-psycopg2-binary==2.9.9
+sqlalchemy
+psycopg2-binary
 
-pillow==10.4.0
-numpy==2.1.1
-faiss-cpu==1.8.0.post1
-opencv-python-headless==4.10.0.84
+pillow
+numpy
+faiss-cpu
+opencv-python-headless
 
-insightface==0.7.3
-onnxruntime>=1.19,<1.22
+insightface
+onnxruntime
 deepface
 
 python-dotenv
